@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+.background-image{
+    display: flex;
+    background: fixed;
+    background-size: cover;
+    justify-content: right;
+
+}
+.books1{
+    width:50vw;
+    height: 100vh;
+    
+}
+.title{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 30%;
+    color: black;
+    background-color:blanchedalmond;
+    z-index: 10000;
+    text-align: center;
+    /* font-family: 'Merienda', cursive; */
+    font-family: 'Rampart One', cursive;
+    font-size:4em;
+    border: blanchedalmond;
+    box-shadow: 5px 5px 3px;
+}
+.about-button{
+    display: flex;
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    padding: 5px 10px;
+    width: 10%;
+    justify-content: center;
+    border: 2px black solid;
+    font-weight: bolder ;
+}   
+.sign-in-button{
+    display: flex;
+    position: absolute;
+    top: 60%;
+    right: 35%;
+    padding: 5px 10px;
+    width: 10%;
+    justify-content: center;
+    border: 2px black solid;
+    font-weight: bolder;
+}
