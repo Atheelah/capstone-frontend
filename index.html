@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <section class="background-image">
+    <div class="blur blurr"></div>
+    <section class="background-image active">
       <h1 class="title">The Book Cave</h1>
       <img
         data-aos="fade-right"
@@ -27,18 +28,32 @@
         alt=""
       />
       <div class="buttons">
-        <button id="toggle" onclick="openNav()" class="about-button">
+        <button id="toggle" class="about-button">
           About Us
         </button>
         <button class="sign-in-button">Sign In</button>
       </div>
     </section>
-    <div id="side-bar" class="side-nav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <p>About The Book Cave</p>
-    </div>
+    <section>
+        <div id="side-bar" class="side-nav">
+            <a href="javascript:void(0)" class="closebtn"
+              >&times;</a
+            >
+            <img class="leafs" src="./leafs-removebg-preview.png" alt="">
+            <div class="nav-text">
+                <p class="about-text">About</p>
+                <br>
+                <p class="about-text">The Book Cave</p>
+                <br>
+                <p>Welcome!</p>
+                <br>
+                <p>The Book Cave has a large variety of different books, ranging from non-fiction, romance and </p>
+                <p>sci-fi, to comedy, comics, horror and so much more.</p>
+            </div>
+           
+          </div>
+    </section>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
