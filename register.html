@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Cave|registration</title>
     <link rel="icon" href="./icons8-books-64.png" type="image/htx+wt" />
-</head>
-<body>
-    <form action="POST" class="register">
-        <p class="register-text">Register</p>
-        <input type="text" placeholder="first name" class="input" />
-        <input type="text" placeholder="last name" class="input" />
-        <input type="text" placeholder="username" class="input" />
-        <input type="text" placeholder="password" class="input" />
-        <input type="text" placeholder="email@domain.com" class="input" />
+  </head>
+  <body>
+    <form class="register" onsubmit="event.preventDefault(); registration()">
+      <p class="register-text">Register</p>
+      <input
+        id="first-name"
+        type="text"
+        placeholder="first name"
+        class="input"
+        required
+      />
+      <input
+        id="last-name"
+        type="text"
+        placeholder="last name"
+        class="input"
+        required
+      />
+      <input
+        id="username"
+        type="text"
+        placeholder="username"
+        class="input"
+        required
+      />
+      <input
+        id="password"
+        type="password"
+        placeholder="password"
+        class="input"
+        required
+      />
+      <input
+        id="email"
+        type="text"
+        placeholder="email@domain.com"
+        class="input"
+        required
+      />
 
-        <button class="register-btn">
-          proceed to sign in
-        </button>
-</body>
+      <button class="register-btn">proceed to sign in</button>
+    </form>
+    <script src="./registration.js"></script>
+  </body>
 </html>

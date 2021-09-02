@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./icons8-books-64.png" type="image/htx+wt" />
-    <link rel="stylesheet" href="sign in.css">
+    <link rel="stylesheet" href="sign in.css" />
     <title>Book Cave|Sign in</title>
-</head>
-<body>  
-    <form method="POST">
-        <p>sign-in</p>
-        <input type="text" placeholder="username" class="input">
-        <input type="text" placeholder="password" class="input">
+  </head>
+  <body>
+    <form onsubmit="event.preventDefault(); login()">
+      <p>sign-in</p>
+      <input
+        id="username"
+        type="text"
+        placeholder="username"
+        class="input"
+        required
+      />
+      <input
+        id="password"
+        type="password"
+        placeholder="password"
+        class="input"
+        required
+      />
+      <span id="error"></span>
+      <button class="sign-in-btn">sign in here</button>
     </form>
     <div>
-        <a href="register.html">
-            <p>
-              Not a member yet? <button class="register">Register</button>
-            </p></a>   
-        <button>sign in here</button>
+      <p>Not a member yet? <a href="register.html">Register</a></p>
     </div>
-    
-</body>
+  </body>
+  <script src="./sign in.js"></script>
 </html>
