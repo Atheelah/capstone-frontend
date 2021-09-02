@@ -35,11 +35,11 @@
 //     }
 //   });
 
-fetch("https://quiet-lowlands-03571.herokuapp.com")
-  .then((res) => res.json())
-  .then((data) => {
-    console.log(data);
-  });
+// fetch("https://quiet-lowlands-03571.herokuapp.com")
+//   .then((res) => res.json())
+//   .then((data) => {
+//     console.log(data);
+//   });
 
 function login() {
   // GETTING DATA FROM FORM

@@ -1,4 +1,4 @@
-// fetch("https://quiet-lowlands-03571.herokuapp.com");
+// heroku link --> ("https://quiet-lowlands-03571.herokuapp.com")
 
 function registration() {
   let firstName = document.querySelector("#first-name").value;
