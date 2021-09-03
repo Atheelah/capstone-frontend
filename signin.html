@@ -9,27 +9,30 @@
     <title>Book Cave|Sign in</title>
   </head>
   <body>
-    <form onsubmit="event.preventDefault(); login()">
-      <p>sign-in</p>
-      <input
-        id="username"
-        type="text"
-        placeholder="username"
-        class="input"
-        required
-      />
-      <input
-        id="password"
-        type="password"
-        placeholder="password"
-        class="input"
-        required
-      />
-      <span id="error"></span>
-      <button class="sign-in-btn">sign in here</button>
-    </form>
-    <div>
-      <p>Not a member yet? <a href="register.html">Register</a></p>
+    <div class="signin-form">
+      <form onsubmit="event.preventDefault(); login()">
+        <p class="heading">sign-in</p>
+        <img class="sign-image" src="./pexels-photo-4065876.jpeg" alt="" />
+        <input
+          id="username"
+          type="text"
+          placeholder="username"
+          class="input"
+          required
+        />
+        <input
+          id="password"
+          type="password"
+          placeholder="password"
+          class="input"
+          required
+        />
+        <span id="error"></span>
+        <button class="sign-in-btn">sign in here</button>
+        <div>
+          <p>Not a member yet? <a href="register.html">Register</a></p>
+        </div>
+      </form>
     </div>
   </body>
   <script src="./signin.js"></script>
