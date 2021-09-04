@@ -7,31 +7,47 @@
 }
 body {
   display: block;
-  background-color: seagreen;
+  background-color: blanchedalmond;
 }
 
 .heading {
   position: absolute;
   z-index: 1000;
+  top: 10%;
+  left: 45%;
+  font-size: 50px;
+  color: white;
 }
 
 .signin-form {
   display: flex;
-  margin: 150px auto;
+  margin: 5px auto;
   width: 500px;
-  height: 400px;
-  margin-left: 500px;
-  background-color: red;
+  height: 500px;
+  background-color: whitesmoke;
+  margin-top: 30px;
+
+  /* margin-left: 500px; */
 }
 
 .sign-image {
   width: 500px;
   height: 150px;
   position: relative;
-  filter: blur(0.5px);
+  /* filter: blur(0.5px); */
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0.5;
 }
 .input {
   display: flex;
+  border: none;
+  border-bottom: 2px solid black;
+  margin: 0 0 25px 0;
+  padding: 10px 5px;
+  background: transparent;
+  width: 100%;
+}
+.input:focus {
+  outline: none;
+  border-bottom: 2px solid black;
 }
