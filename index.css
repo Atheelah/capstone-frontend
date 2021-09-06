@@ -41,13 +41,13 @@
   left: 35%;
   width: 30%;
   color: black;
-  background-color: blanchedalmond;
+  background-color: white;
   z-index: 10000;
   text-align: center;
   /* font-family: 'Merienda', cursive; */
   font-family: "Rampart One", cursive;
   font-size: 4em;
-  border: blanchedalmond;
+  border: white;
   box-shadow: 5px 5px 3px;
 }
 .about-button {

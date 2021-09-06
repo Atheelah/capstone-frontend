@@ -9,30 +9,121 @@
     <title>Book Cave|Sign in</title>
   </head>
   <body>
-    <div class="signin-form">
-      <form onsubmit="event.preventDefault(); login()">
-        <p class="heading">sign-in</p>
-        <img class="sign-image" src="./plants.jpeg" alt="" />
-        <input
-          id="username"
-          type="text"
-          placeholder="username"
-          class="input"
-          required
-        />
-        <input
-          id="password"
-          type="password"
-          placeholder="password"
-          class="input"
-          required
-        />
-        <span id="error"></span>
-        <button class="sign-in-btn">sign in here</button>
-        <div>
-          <p>Not a member yet? <a href="register.html">Register</a></p>
+    <div class="flip-container">
+      <div class="flipper" id="flipper">
+        <div class="signin-form front">
+          <form onsubmit="event.preventDefault(); login()">
+            <p class="heading">SIGN-IN</p>
+            <img class="sign-image" src="./plants.jpeg" alt="" />
+            <div class="user">
+              <img
+                src="https://img.icons8.com/material-rounded/24/000000/user.png"
+              />
+              <input
+                id="username"
+                type="text"
+                placeholder="username"
+                class="input"
+                required
+              />
+            </div>
+            <div class="password">
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/000000/password--v1.png"
+              />
+              <input
+                id="password"
+                type="password"
+                placeholder="password"
+                class="input"
+                required
+              />
+            </div>
+
+            <span id="error"></span>
+            <button class="sign-in-btn">sign in here</button>
+            <div>
+              <a class="flipbutton register" id="loginButton" href="#"
+                >Don't have an account? Register</a
+              >
+            </div>
+          </form>
         </div>
-      </form>
+        <div class="signin-form back">
+          <form onsubmit="event.preventDefault(); login()">
+            <p class="heading">REGISTER</p>
+            <img class="sign-image" src="./plants.jpeg" alt="" />
+            <div class="name">
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/000000/ball-point-pen.png"
+              />
+              <input
+                id="first-name"
+                type="text"
+                placeholder="First Name"
+                class="input"
+                required
+              />
+            </div>
+
+            <div class="surname">
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/000000/ball-point-pen.png"
+              />
+              <input
+                id="last-name"
+                type="text"
+                placeholder="Last Name"
+                class="input"
+                required
+              />
+            </div>
+            <div class="username">
+              <img
+                src="https://img.icons8.com/ios/30/000000/employee-card.png"
+              />
+              <input
+                id="usename"
+                type="text"
+                placeholder="username"
+                class="input"
+                required
+              />
+            </div>
+            <div class="password">
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/000000/password--v1.png"
+              />
+              <input
+                id="password"
+                type="password"
+                placeholder="password"
+                class="input"
+                required
+              />
+            </div>
+            <div class="email">
+              <img
+                src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/30/000000/external-email-advertising-kiranshastry-solid-kiranshastry-1.png"
+              />
+              <input
+                id="email"
+                type="text"
+                placeholder="email@domain.com"
+                class="input"
+                required
+              />
+            </div>
+            <span id="error"></span>
+            <button class="sign-in-btn">sign in here</button>
+            <div>
+              <a class="flipbutton register" id="registerButton" href="#"
+                >Already have an account? Sign in</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
   <script src="./signin.js"></script>

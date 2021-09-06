@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,13 +9,15 @@
 body {
   display: block;
   background-color: whitesmoke;
+  font-family: "Dosis", sans-serif;
+  font-weight: bolder;
 }
 
 .heading {
   position: absolute;
   z-index: 1000;
   top: 10%;
-  left: 45%;
+  left: 35%;
   font-size: 50px;
   color: black;
 }
@@ -26,6 +29,8 @@ body {
   height: 500px;
   background-color: whitesmoke;
   margin-top: 30px;
+  box-shadow: 10px 10px 8px #888888;
+  border-radius: 20px;
 
   /* margin-left: 500px; */
 }
@@ -35,19 +40,108 @@ body {
   height: 150px;
   position: relative;
   filter: blur(0.5px);
-  background-size: cover;
-  /* opacity: 0.5; */
+  object-fit: cover;
+  opacity: 0.5;
 }
 .input {
   display: flex;
   border: none;
   border-bottom: 2px solid black;
-  margin: 0 0 25px 0;
-  padding: 10px 5px;
   background: transparent;
-  width: 100%;
+  width: 60%;
+  margin-left: 50px;
+  transition: top 0.2s, font 0.2s;
+  font-size: 15px;
+  text-align: center;
 }
 .input:focus {
   outline: none;
   border-bottom: 2px solid black;
+}
+
+.user {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-left: 11%;
+}
+
+.username {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+.name {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 11%;
+}
+.surname {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+.email {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+.password {
+  display: flex;
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+.sign-in-btn {
+  width: 20vw;
+  padding: 5px;
+  margin-left: 26%;
+  margin-bottom: 15px;
+  font-family: "Dosis", sans-serif;
+  font-weight: bolder;
+  background-color: #587223;
+  font-size: 1em;
+  border: 1px solid #587223;
+  cursor: pointer;
+}
+.sign-in-btn:hover {
+  background-color: white;
+}
+.register {
+  margin-left: 30%;
+  color: black;
+}
+
+.flip-container {
+  perspective: 1000;
+}
+
+.flipper {
+  position: relative;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+.front,
+.back {
+  position: absolute;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.front {
+  z-index: 2;
+
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+  height: 90vh;
+}
+.flip {
+  transform: rotateY(180deg);
 }
