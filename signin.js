@@ -23,7 +23,7 @@ function login() {
         return;
       } else {
         localStorage.setItem("user", JSON.stringify(res.data));
-        window.location = "./index.html";
+        window.location = "./books.html";
       }
     });
 }

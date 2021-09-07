@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -26,13 +28,28 @@
   /* height: 20vh; */
   color: black;
   text-align: center;
-  font-family: "Dosis", sans-serif;
+  font-family: "Merienda", cursive;
   font-weight: bolder;
 }
 
+.heading {
+  margin-left: px;
+  position: absolute;
+}
+
+.heading-1 {
+  font-family: "Rampart One", cursive;
+  font-size: 2em;
+}
+.heading-2 {
+  font-size: larger;
+  font-family: "Merienda", cursive;
+  font-weight: bolder;
+}
 .contact-container {
   display: flex;
-  margin-left: 200px;
+  margin-top: 20px;
+  margin-left: 250px;
 }
 .contact-input {
   display: flex;
@@ -57,7 +74,8 @@
 .image {
   width: 39vw;
   box-shadow: 2px 5px 10px rgba(92, 91, 91, 0.533);
+  margin-top: 100px;
 }
 #contact-form {
-  margin-top: 40px;
+  margin-top: 100px;
 }
