@@ -31,17 +31,19 @@
 }
 
 .books1 {
-  width: 50vw;
+  width: 100vw;
   height: 100vh;
+  object-fit: cover;
 }
 
 .title {
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 35%;
-  width: 30%;
+  width: 40%;
+  height: 20%;
   color: black;
-  background-color: white;
+  background-color: rgb(236, 230, 230);
   z-index: 10000;
   text-align: center;
   /* font-family: 'Merienda', cursive; */
@@ -123,19 +125,24 @@
   position: fixed;
   z-index: 1000;
   height: 100vh;
-  width: 160px;
+  width: 130px;
   top: 0;
   left: 0;
   overflow-x: hidden;
-  margin-top: 20px;
+  /* margin-top: px; */
+  text-align: center;
+  background-color: rgb(236, 230, 230);
 }
 .nav-bar a {
-  padding: 10px 8px 6px 16px;
-  box-shadow: 40px 40px 40px 40px #888888;
+  padding: 60px 1px 6px 5px;
+
   text-decoration: none;
   font-size: 15px;
-  background-color: black;
+  background-color: rgb(236, 230, 230);
   display: block;
-  height: 25vh;
-  color: white;
+  /* height: 20vh; */
+  color: black;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-weight: bolder;
 }

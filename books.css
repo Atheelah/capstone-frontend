@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-bar {
+  position: fixed;
+  z-index: 1000;
+  height: 100vh;
+  width: 130px;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  /* margin-top: px; */
+  text-align: center;
+  background-color: rgb(236, 230, 230);
+}
+.nav-bar a {
+  padding: 60px 1px 6px 5px;
+
+  text-decoration: none;
+  font-size: 15px;
+  background-color: rgb(236, 230, 230);
+  display: block;
+  /* height: 20vh; */
+  color: black;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-weight: bolder;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2%;
+  /* margin-left: 70px; */
+  width: 100%;
+}
+.book-name {
+  font-family: "Rampart One", cursive;
+  font-size: 30px;
+}
+.author-name {
+  font-family: "Dosis", sans-serif;
+}
+
+.productImage {
+  width: 300px;
+  height: 300px;
+  display: block;
+}
+
+.item {
+  width: 300px;
+  margin: 2%;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-image: url(./plants.jpeg);
+}
+
+.description {
+  font-family: sans-serif;
+  color: white;
+  font-weight: bolder;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* text-align: center; */
+  font-family: "Dosis", sans-serif;
+}
+.book-genre {
+  font-family: sans-serif;
+}
+.card-btn {
+  padding: 5px;
+  font-weight: 10px;
+  width: 100%;
+  background-color: rgb(86, 153, 86);
+  border: 2px solid rgb(86, 153, 86);
+  font-weight: bolder;
+}
+
+.card-btn:hover {
+  background-color: white;
+}
