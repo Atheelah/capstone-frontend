@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Cave|Contact Us</title>
+    <link rel="stylesheet" href="./contact.css" />
+  </head>
+  <body>
+    <div class="contact-container">
+      <div>
+        <p>Have questions ?</p>
+        <p>Pop us a message</p>
+        <img class="image" src="./pexels-photo-4065876.jpeg" alt="" />
+      </div>
+      <form
+        id="contact-form"
+        action="https://formspree.io/f/xeqvaklo"
+        method="POST"
+      >
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          class="contact-input"
+          placeholder="Full Name"
+        />
+        <input
+          type="text"
+          name="email"
+          id="email"
+          required
+          class="contact-input"
+          placeholder="Email@domain.com"
+        />
+        <input
+          type="tel"
+          name="contact"
+          id="contact"
+          required
+          class="contact-input"
+          placeholder="074 123 56789"
+        />
+        <textarea
+          name="your message"
+          id="your message"
+          cols="49"
+          rows="10"
+          placeholder="Your Message Here"
+          class="contact-input"
+        >
+        </textarea>
+        <button class="button">send</button>
+      </form>
+    </div>
+
+    <script src="./contact.js"></script>
+  </body>
+</html>
