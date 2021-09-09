@@ -2,20 +2,20 @@ function addBook() {
   let imageUrl = document.querySelector(".imgUrl").value;
   let bookName = document.querySelector(".bookName").value;
   let author = document.querySelector(".author").value;
+  let description = document.querySelector(".description").value;
   let genre = document.querySelector(".genre").value;
   let price = document.querySelector(".price").value;
-  let description = document.querySelector(".description").value;
 }
 
-fetch("https://end-of-term.herokuapp.com/add-product/", {
+fetch("https://end-of-term.herokuapp.com/add-book/", {
   method: "POST",
   body: JSON.stringify({
-    img_url,
-    name,
+    imgUrl,
+    bookName,
+    author,
     description,
+    genre,
     price,
-    category,
-    review,
   }),
   headers: {
     "Content-type": "application/json; charset=UTF-8",
@@ -31,7 +31,7 @@ fetch("https://end-of-term.herokuapp.com/add-product/", {
     }
   });
 
-let addForm = document.querySelector(".add-product");
+let addForm = document.querySelector(".adding");
 addForm.addEventListener("submit", (e) => {
   e.preventDefault();
 });

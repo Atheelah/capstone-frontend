@@ -7,18 +7,19 @@
     <title>Book Cave|Add book</title>
   </head>
   <body>
-    <form class="adding">
+    <form class="adding" onsubmit="event.preventDefault(); addBook()">
       <input class="imgUrl" type="text" placeholder="Image Url" required />
       <input class="bookName" type="text" placeholder="book name" required />
       <input class="author" type="text" placeholder="author" required />
-      <input class="genre" type="text" placeholder="genre" required />
-      <input class="price" type="text" placeholder="price" required />
       <input
         class="description"
         type="text"
         placeholder="description"
         required
       />
+      <input class="genre" type="text" placeholder="genre" required />
+      <input class="price" type="text" placeholder="price" required />
+
       <button class="btn">Add book</button>
     </form>
     <script src="./add.js"></script>
