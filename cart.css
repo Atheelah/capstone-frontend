@@ -111,3 +111,9 @@
 .logo {
   margin-top: 20px;
 }
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

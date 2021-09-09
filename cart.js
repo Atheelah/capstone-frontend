@@ -5,6 +5,8 @@ function showCart() {
 
   let index = 0;
 
+  let totalPrice = 0;
+
   cart.forEach((card) => {
     if (card) {
       counter += 1;
@@ -22,10 +24,21 @@ function showCart() {
           <button onclick='removeFromCart(${index})' class="card-btn">Remove Book</button>
       </div>`;
       index += 1;
+      let currentPrice = "";
+      for (let i = 1; i < card["price"].length; i++) {
+        currentPrice = currentPrice + card["price"][i];
+      }
+      totalPrice =
+        Math.round((parseFloat(totalPrice) + parseFloat(currentPrice)) * 100) /
+        100;
+      document.querySelector(".cart-price").innerHTML = `
+        Total Price: $${totalPrice}
+      `;
     }
   });
   if (!counter) {
     alert("You have no items in your cart.");
+    window.location.replace("index.html");
   }
 }
 
