@@ -117,3 +117,21 @@
   align-items: center;
   flex-direction: column;
 }
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 0%;
+  z-index: 1000;
+  scroll-behavior: smooth;
+  width: 100%;
+  background-color: rgb(86, 153, 86);
+  font-size: 20px;
+  font-weight: bolder;
+  justify-content: center;
+}
+.foot1 {
+  margin-right: 12px;
+}
+.icon {
+  color: black;
+}

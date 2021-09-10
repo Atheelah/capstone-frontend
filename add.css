@@ -27,3 +27,84 @@
   font-family: "Merienda", cursive;
   font-weight: bolder;
 }
+.input {
+  display: flex;
+  padding: 5px;
+  border: grey solid 1px;
+  background: transparent;
+  width: 60%;
+  margin-left: 50px;
+  transition: top 0.2s, font 0.2s;
+  font-size: 15px;
+  text-align: center;
+}
+.adding {
+  padding-top: 2px;
+  padding-left: 50px;
+  margin: 5px auto;
+  width: 400px;
+  height: 450px;
+  background-color: whitesmoke;
+  margin-top: 30px;
+  box-shadow: 10px 10px 8px #888888;
+  border-radius: 20px;
+}
+.btn {
+  width: 20vw;
+  padding: 5px;
+  margin-left: 11%;
+  margin-bottom: 15px;
+  font-family: "Dosis", sans-serif;
+  font-weight: bolder;
+  background-color: rgb(86, 153, 86);
+  font-size: 1em;
+  border: 1px solid rgb(86, 153, 86);
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: white;
+}
+.imgUrl {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+.bookName {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+.author {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+
+.description {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+
+.price {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+
+.genre {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+.head {
+  font-family: "Rampart One", cursive;
+  font-size: 28px;
+  margin-left: 80px;
+}
