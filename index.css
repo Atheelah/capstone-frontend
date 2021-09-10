@@ -149,3 +149,13 @@
 .logo {
   margin-top: 20px;
 }
+@media screen and (max-width: 1109px) {
+  .title {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 929px) {
+  .title {
+    font-size: 2em;
+  }
+}

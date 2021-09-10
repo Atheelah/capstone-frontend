@@ -39,7 +39,7 @@ registerButton.onclick = function () {
 };
 
 // heroku link --> ("https://quiet-lowlands-03571.herokuapp.com")
-
+// registration function
 function registration() {
   let first_name = document.querySelector("#first-name").value;
   let last_name = document.querySelector("#last-name").value;
@@ -47,7 +47,7 @@ function registration() {
   let password = document.querySelector("#r-password").value;
   // let email = document.querySelector("#email").value;
   console.log(first_name, last_name, username, password);
-
+  //  fetching api in the back
   fetch("https://quiet-lowlands-03571.herokuapp.com/registration/", {
     method: "POST",
     body: JSON.stringify({

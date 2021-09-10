@@ -1,3 +1,4 @@
+// this is my function to display my cart and what is in it
 function showCart() {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -6,7 +7,7 @@ function showCart() {
   let index = 0;
 
   let totalPrice = 0;
-
+  // here i am creating my remove from cart cards, and displaying how it will look
   cart.forEach((card) => {
     if (card) {
       counter += 1;
@@ -24,6 +25,7 @@ function showCart() {
           <button onclick='removeFromCart(${index})' class="card-btn">Remove Book</button>
       </div>`;
       index += 1;
+      // here i am creating function to calculate all the prices in the cart as well as displaying the prices on top
       let currentPrice = "";
       for (let i = 1; i < card["price"].length; i++) {
         currentPrice = currentPrice + card["price"][i];
@@ -36,14 +38,15 @@ function showCart() {
       `;
     }
   });
+  // if there are no items in the cart an error message will pop up
   if (!counter) {
     alert("You have no items in your cart.");
     window.location.replace("index.html");
   }
 }
-
+// here i am calling my function
 showCart();
-
+// function to remove items from my cart
 function removeFromCart(index) {
   console.log(index);
   let cart = JSON.parse(localStorage.getItem("cart")) || [];

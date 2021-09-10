@@ -1,3 +1,4 @@
+// fetching the api
 fetch("https://quiet-lowlands-03571.herokuapp.com/get-books/")
   .then((res) => res.json())
   .then((data) => {
@@ -5,9 +6,10 @@ fetch("https://quiet-lowlands-03571.herokuapp.com/get-books/")
     productCard(data);
   });
 
+// this is the function for my product cards
 function productCard(cards) {
   let productsContainer = document.querySelector(".products-container");
-
+  // this is what i want displayed on my product cards eg. image, author, description etc.
   productsContainer.innerHTML = "";
   cards.data.forEach((card) => {
     productsContainer.innerHTML += `
@@ -26,7 +28,8 @@ function productCard(cards) {
     </div>`;
   });
 }
-
+// this my add to cart function, so what is does is when the button is clicked my product gets added
+// to a cart and gets displayed on a new page
 function addToCart(item) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   let productsContainer = document.querySelector(".products-container");
@@ -45,8 +48,8 @@ function addToCart(item) {
 
   cart.push(itemInfo);
   console.log(cart);
-
+  // alert box for when a book is added
   alert("book added");
-
+  // data is stored in the local storage
   window.localStorage.setItem("cart", JSON.stringify(cart));
 }
