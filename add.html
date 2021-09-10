@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./add.css" />
     <title>Book Cave|Add book</title>
   </head>
   <!-- form for the inputs -->
   <body>
-    <form class="adding" onsubmit="event.preventDefault(); addBook()">
+    <!-- Navigatiion bar -->
+    <div class="nav-bar">
+      <img class="logo" src="./icons8-books-64.png" alt="" />
+      <a href="./index.html">Home</a>
+      <a href="./books.html">Books Galore</a>
+      <a href="./signin.html">Become a member</a>
+      <a href="./cart.html">View Cart</a>
+      <a href="./contact.html">Contact us</a>
+    </div>
+    <form class="adding">
       <input class="imgUrl" type="text" placeholder="Image Url" required />
       <input class="bookName" type="text" placeholder="book name" required />
       <input class="author" type="text" placeholder="author" required />
@@ -21,7 +31,7 @@
       <input class="genre" type="text" placeholder="genre" required />
       <input class="price" type="text" placeholder="price" required />
 
-      <button class="btn">Add book</button>
+      <button type="submit" class="btn">Add book</button>
     </form>
     <!-- Scripts -->
     <script src="./add.js"></script>

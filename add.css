@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+
+.nav-bar {
+  position: fixed;
+  z-index: 1000;
+  height: 100vh;
+  width: 130px;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  /* margin-top: px; */
+  text-align: center;
+  background-color: rgb(236, 230, 230);
+}
+.nav-bar a {
+  padding: 60px 1px 6px 5px;
+
+  text-decoration: none;
+  font-size: 15px;
+  background-color: rgb(236, 230, 230);
+  display: block;
+  /* height: 20vh; */
+  color: black;
+  text-align: center;
+  font-family: "Merienda", cursive;
+  font-weight: bolder;
+}

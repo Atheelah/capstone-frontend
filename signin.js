@@ -22,9 +22,28 @@ function login() {
         alert("User not registered!");
         return;
       } else {
+        getToken(username, password);
         localStorage.setItem("user", JSON.stringify(res.data));
-        window.location = "./books.html";
+        setTimeout((window.location = "./books.html"), 10000);
       }
+    });
+}
+
+function getToken(username, password) {
+  fetch(`https://quiet-lowlands-03571.herokuapp.com/auth`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      username: username,
+      password: password,
+    }),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+      window.localStorage["jwt-token"] = data.access_token;
     });
 }
 var loginButton = document.getElementById("loginButton");

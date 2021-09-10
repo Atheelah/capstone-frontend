@@ -20,7 +20,7 @@
   background-color: rgb(236, 230, 230);
 }
 .nav-bar a {
-  padding: 60px 1px 6px 5px;
+  padding: 40px 1px 6px 5px;
 
   text-decoration: none;
   font-size: 15px;
@@ -38,7 +38,8 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 2%;
-  /* margin-left: 70px; */
+
+  padding-left: 130px;
   width: 100%;
 }
 .book-name {
@@ -76,13 +77,14 @@
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-image: url(./plants.jpeg);
+  /* background-image: url(./plants.jpeg); */
+  background-color: rgb(86, 153, 86);
 }
 
 .description {
   padding: 10px;
   font-family: sans-serif;
-  color: red;
+  color: white;
   font-weight: bolder;
   font-size: 18px;
   position: absolute;
@@ -112,4 +114,22 @@
 }
 .logo {
   margin-top: 20px;
+}
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 0%;
+  z-index: 1000;
+  scroll-behavior: smooth;
+  width: 100%;
+  background-color: rgb(86, 153, 86);
+  font-size: 20px;
+  font-weight: bolder;
+  justify-content: center;
+}
+.foot1 {
+  margin-right: 12px;
+}
+.icon {
+  color: black;
 }
